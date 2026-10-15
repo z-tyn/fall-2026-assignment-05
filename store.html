@@ -1,1 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store Catalog | Artisan Roast Co. - Beans & Equipment</title>
+    <meta
+      name="description"
+      content="Shop Artisan Roast Co.'s full catalog of single-origin beans, craft espresso blends, precision burr grinders, and barista tools."
+    />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+  </head>
+  <body>
+    <!-- Persistent Header -->
+    <header class="site-header">
+      <div class="container header-container">
+        <a
+          href="./index.html"
+          class="site-logo"
+          aria-label="Artisan Roast Co. Home"
+        >
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+            <line x1="6" y1="1" x2="6" y2="4"></line>
+            <line x1="10" y1="1" x2="10" y2="4"></line>
+            <line x1="14" y1="1" x2="14" y2="4"></line>
+          </svg>
+          <span>Artisan Roast Co.</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary Navigation">
+          <a href="./index.html" class="nav-link">Home</a>
+          <a href="./about.html" class="nav-link">About</a>
+          <a href="./store.html" class="nav-link active" aria-current="page"
+            >Store</a
+          >
+        </nav>
+      </div>
+    </header>
 
+    <main class="site-main">
+      <div class="container">
+        <!-- Store Catalog Header -->
+        <div class="store-header">
+          <p class="section-subtitle">Handcrafted & Curated Collection</p>
+          <h1>The Roastery Store</h1>
+          <p>
+            Browse our complete 15-item catalog of freshly roasted micro-lot
+            beans, precision brewing gear, and barista tools.
+          </p>
+        </div>
+
+        <!-- Product Grid Layout Container -->
+        <section class="product-grid-container" aria-label="Product Catalog">
+          <div
+            id="product-grid"
+            class="product-grid"
+            aria-live="polite"
+            aria-relevant="additions removals"
+          >
+            <!-- Dynamically populated via src/main.js -->
+          </div>
+
+          <!-- Dynamic Client-Side Pagination Controls -->
+          <nav
+            class="pagination-wrapper"
+            aria-label="Product Catalog Pagination"
+          >
+            <div class="pagination-controls">
+              <button
+                type="button"
+                id="prev-btn"
+                class="pagination-btn"
+                aria-label="Previous Page"
+                disabled
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+                Previous
+              </button>
+
+              <span
+                id="page-indicator"
+                class="page-indicator"
+                role="status"
+                aria-live="polite"
+                >Page 1 of 3</span
+              >
+
+              <button
+                type="button"
+                id="next-btn"
+                class="pagination-btn"
+                aria-label="Next Page"
+              >
+                Next
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </nav>
+        </section>
+      </div>
+    </main>
+
+    <!-- Persistent Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-logo">Artisan Roast Co.</div>
+            <p>
+              Dedicated to small-batch roasting excellence, ethical sourcing,
+              and empowering the home barista since 2018.
+            </p>
+            <p>142 Roaster's Way, Suite 100<br />Portland, OR 97201</p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About Our Roastery</a></li>
+              <li><a href="./store.html">Product Store</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="https://instagram.com" target="_blank" rel="noopener"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://twitter.com" target="_blank" rel="noopener"
+                  >Twitter / X</a
+                >
+              </li>
+              <li>
+                <a href="https://youtube.com" target="_blank" rel="noopener"
+                  >Brewing Guides</a
+                >
+              </li>
+              <li>
+                <a href="mailto:hello@artisanroastco.example"
+                  >hello@artisanroastco.example</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Roastery Hours</h4>
+            <ul class="footer-hours-list">
+              <li>
+                <span>Mon &ndash; Fri:</span>
+                <span>7:00 AM &ndash; 6:00 PM</span>
+              </li>
+              <li>
+                <span>Saturday:</span> <span>8:00 AM &ndash; 6:00 PM</span>
+              </li>
+              <li><span>Sunday:</span> <span>8:00 AM &ndash; 4:00 PM</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 Artisan Roast Co. All rights reserved. Built with modern
+            HTML5, CSS3, & ES6+.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Main JS Application Bundle -->
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
